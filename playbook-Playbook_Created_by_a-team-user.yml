@@ -1,0 +1,87 @@
+contentitemexportablefields:
+  contentitemfields:
+    definitionid: ""
+    fromServerVersion: ""
+    itemVersion: ""
+    packID: ""
+    propagationLabels:
+    - all
+    toServerVersion: ""
+id: 590be715-6c98-4860-8ab0-56f37c89bef6
+inputs: []
+name: Playbook Created by a-team-user
+outputs: []
+rolename:
+- a-team
+starttaskid: "0"
+tasks:
+  "0":
+    id: "0"
+    ignoreworker: false
+    isautoswitchedtoquietmode: false
+    isoversize: false
+    nexttasks:
+      '#none#':
+      - "1"
+    note: false
+    quietmode: 0
+    separatecontext: false
+    skipunavailable: false
+    task:
+      brand: ""
+      id: c5676900-8eda-4fd7-8986-1f187ae8e614
+      iscommand: false
+      name: ""
+      version: -1
+    taskid: c5676900-8eda-4fd7-8986-1f187ae8e614
+    timertriggers: []
+    type: start
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 50
+        }
+      }
+  "1":
+    id: "1"
+    ignoreworker: false
+    isautoswitchedtoquietmode: false
+    isoversize: false
+    note: false
+    quietmode: 0
+    separatecontext: false
+    skipunavailable: false
+    task:
+      brand: ""
+      description: Check whether the values provided in arguments are equal. If either
+        of the arguments are missing, no is returned.
+      id: 790fbd95-2962-4da1-8f71-7c0d5dc390d4
+      iscommand: false
+      name: AreValuesEqual
+      script: AreValuesEqual
+      type: condition
+      version: -1
+    taskid: 790fbd95-2962-4da1-8f71-7c0d5dc390d4
+    timertriggers: []
+    type: condition
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 230
+        }
+      }
+version: -1
+view: |-
+  {
+    "linkLabelsPosition": {},
+    "paper": {
+      "dimensions": {
+        "height": 275,
+        "width": 380,
+        "x": 450,
+        "y": 50
+      }
+    }
+  }
