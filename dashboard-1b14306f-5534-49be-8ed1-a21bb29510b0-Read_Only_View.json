@@ -1,0 +1,210 @@
+{
+	"definitionId": "",
+	"fromDate": "0001-01-01T00:00:00Z",
+	"fromDateLicense": "0001-01-01T00:00:00Z",
+	"fromServerVersion": "",
+	"hidePivot": false,
+	"hideSearch": false,
+	"id": "1b14306f-5534-49be-8ed1-a21bb29510b0",
+	"isCommon": true,
+	"itemVersion": "",
+	"layout": [
+		{
+			"forceRange": false,
+			"h": 3,
+			"i": "95b57d80-7832-11ec-bdf4-17ea0c133847",
+			"id": "95b57d80-7832-11ec-bdf4-17ea0c133847",
+			"reflectDimensions": true,
+			"w": 4,
+			"widget": {
+				"Cache": null,
+				"category": "",
+				"commitMessage": "",
+				"dataType": "incidents",
+				"dateRange": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"fromDateLicense": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byFrom": "days",
+						"byTo": "",
+						"field": "",
+						"fromValue": 7,
+						"toValue": null
+					},
+					"toDate": "0001-01-01T00:00:00Z"
+				},
+				"definitionId": "",
+				"fromServerVersion": "5.0.0",
+				"id": "active-incidents-by-type",
+				"isPredefined": true,
+				"itemVersion": "1.2.2",
+				"modified": "2022-01-11T07:23:47.029648624Z",
+				"name": "Active Incidents - Line chart",
+				"packID": "CommonWidgets",
+				"packPropagationLabels": [
+					"all"
+				],
+				"params": {
+					"groupBy": [
+						"occurred(d)",
+						"type"
+					]
+				},
+				"prevName": "Active Incidents - Line chart",
+				"primaryTerm": 1,
+				"propagationLabels": [],
+				"query": "-category:job and -status:archived and -status:closed",
+				"sequenceNumber": 2284,
+				"shouldCommit": false,
+				"sortValues": [
+					"2203"
+				],
+				"toServerVersion": "",
+				"vcShouldIgnore": false,
+				"vcShouldKeepItemLegacyProdMachine": false,
+				"version": 1,
+				"widgetType": "line"
+			},
+			"x": 0,
+			"y": 0
+		},
+		{
+			"forceRange": false,
+			"h": 2,
+			"i": "9ceabc50-7832-11ec-bdf4-17ea0c133847",
+			"id": "9ceabc50-7832-11ec-bdf4-17ea0c133847",
+			"reflectDimensions": true,
+			"w": 2,
+			"widget": {
+				"Cache": null,
+				"category": "",
+				"commitMessage": "",
+				"dataType": "incidents",
+				"dateRange": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"fromDateLicense": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byFrom": "days",
+						"byTo": "",
+						"field": "",
+						"fromValue": 7,
+						"toValue": null
+					},
+					"toDate": "0001-01-01T00:00:00Z"
+				},
+				"definitionId": "",
+				"fromServerVersion": "5.0.0",
+				"id": "closed-incidents-by-role",
+				"isPredefined": true,
+				"itemVersion": "1.2.2",
+				"modified": "2022-01-11T07:23:47.030866463Z",
+				"name": "Closed Incidents by Role",
+				"packID": "CommonWidgets",
+				"packPropagationLabels": [
+					"all"
+				],
+				"params": {
+					"groupBy": [
+						"roles"
+					]
+				},
+				"prevName": "Closed Incidents by Role",
+				"primaryTerm": 1,
+				"propagationLabels": [],
+				"query": "status:closed",
+				"sequenceNumber": 2352,
+				"shouldCommit": false,
+				"size": 10,
+				"sortValues": [
+					"2271"
+				],
+				"toServerVersion": "",
+				"vcShouldIgnore": false,
+				"vcShouldKeepItemLegacyProdMachine": false,
+				"version": 1,
+				"widgetType": "bar"
+			},
+			"x": 4,
+			"y": 0
+		},
+		{
+			"forceRange": true,
+			"h": 3,
+			"i": "de1133d0-7832-11ec-bdf4-17ea0c133847",
+			"id": "de1133d0-7832-11ec-bdf4-17ea0c133847",
+			"reflectDimensions": true,
+			"w": 12,
+			"widget": {
+				"Cache": null,
+				"category": "",
+				"commitMessage": "",
+				"dataType": "incidents",
+				"dateRange": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"fromDateLicense": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byFrom": "days",
+						"byTo": "",
+						"field": "",
+						"fromValue": 7,
+						"toValue": null
+					},
+					"toDate": "0001-01-01T00:00:00Z"
+				},
+				"definitionId": "",
+				"fromServerVersion": "5.0.0",
+				"id": "incidents-assigned-by-user",
+				"isPredefined": true,
+				"itemVersion": "1.2.2",
+				"modified": "2022-01-11T07:23:47.030354672Z",
+				"name": "Active Incidents Assigned by User",
+				"packID": "CommonWidgets",
+				"packPropagationLabels": [
+					"all"
+				],
+				"params": {
+					"groupBy": [
+						"owner"
+					]
+				},
+				"prevName": "Active Incidents Assigned by User",
+				"primaryTerm": 1,
+				"propagationLabels": [],
+				"query": "-category:job and -status:archived and -status:closed",
+				"sequenceNumber": 2323,
+				"shouldCommit": false,
+				"sortValues": [
+					"2242"
+				],
+				"toServerVersion": "",
+				"vcShouldIgnore": false,
+				"vcShouldKeepItemLegacyProdMachine": false,
+				"version": 1,
+				"widgetType": "bar"
+			},
+			"x": 0,
+			"y": 3
+		}
+	],
+	"locked": false,
+	"modulePage": false,
+	"name": "Read Only View ",
+	"owner": "",
+	"packID": "",
+	"period": {
+		"by": "",
+		"byFrom": "days",
+		"byTo": "",
+		"field": "",
+		"fromValue": 7,
+		"toValue": null
+	},
+	"propagationLabels": [],
+	"system": false,
+	"toDate": "0001-01-01T00:00:00Z",
+	"toServerVersion": "",
+	"version": -1
+}
