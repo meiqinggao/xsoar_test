@@ -1,0 +1,19 @@
+{
+	"color": "#9D2B26",
+	"definitionId": "ThreatIntelReport",
+	"detached": false,
+	"disabled": false,
+	"fromServerVersion": "",
+	"id": "ThreatIntelReport_Threat Actor",
+	"itemVersion": "1.0.4",
+	"layout": "Threat Actor Report",
+	"locked": false,
+	"name": "Threat Actor",
+	"packID": "ThreatIntelReports",
+	"packPropagationLabels": [
+		"all"
+	],
+	"system": true,
+	"toServerVersion": "",
+	"version": -1
+}
