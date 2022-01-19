@@ -1,0 +1,73 @@
+args:
+- description: The json to transform to a markdown table.
+  name: value
+  required: true
+- description: The markdown title.
+  name: title
+- description: Comma-separated list of table header values. Default will include all
+    available table headers.
+  name: headers
+- description: Try transforming complex JSON automatically.
+  name: is_auto_json_transform
+- description: 'Transformation JSON from value to strings. The syntax is: `{"header_key":
+    {"keys": [<item1>, ...], "is_nested": true/false}}` '
+  name: json_transform_properties
+comment: Accepts a json object and returns a markdown.
+commonfields:
+  id: JsonToTable
+  version: -1
+contentitemexportablefields:
+  contentitemfields:
+    definitionid: ""
+    fromServerVersion: 5.5.0
+    itemVersion: 1.6.22
+    packID: CommonScripts
+    packPropagationLabels:
+    - all
+    propagationLabels: []
+    toServerVersion: ""
+dockerimage: demisto/python3:3.9.8.24399
+enabled: true
+engineinfo: {}
+mainengineinfo: {}
+name: JsonToTable
+pswd: ""
+runas: DBotWeakRole
+runonce: false
+script: |
+  register_module_line('JsonToTable', 'start', __line__())
+
+
+
+
+  def main():
+      args = demisto.args()
+      value = args.get('value')
+      if isinstance(value, str):
+          value = safe_load_json(value)
+      title = args.get('title')
+      headers = argToList(args.get('headers'))
+      is_auto_json_transform = argToBoolean(args.get('is_auto_json_transform', False))
+      json_transform_properties = args.get('json_transform_properties')
+      json_transformers = {}
+      if json_transform_properties:
+          json_transform_properties = safe_load_json(json_transform_properties)
+          for header_key, values in json_transform_properties.items():
+              json_transformers[header_key] = JsonTransformer(**values)
+      markdown = tableToMarkdown(title, value, headers=headers, json_transform_mapping=json_transformers,
+                                 is_auto_json_transform=is_auto_json_transform)
+      return_results(markdown)
+
+
+  if __name__ in ('__main__', '__builtin__', 'builtins'):
+      main()
+
+  register_module_line('JsonToTable', 'end', __line__())
+scripttarget: 0
+subtype: python3
+system: true
+tags:
+- transformer
+- entirelist
+- general
+type: python
