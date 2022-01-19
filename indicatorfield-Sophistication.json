@@ -1,0 +1,62 @@
+{
+	"associatedToAll": false,
+	"associatedTypes": [
+		"Threat Actor"
+	],
+	"breachScript": "",
+	"caseInsensitive": true,
+	"cliName": "sophistication",
+	"closeForm": false,
+	"columns": null,
+	"content": true,
+	"defaultRows": null,
+	"definitionId": "",
+	"description": "",
+	"editForm": true,
+	"fieldCalcScript": "",
+	"fromServerVersion": "6.2.0",
+	"group": 2,
+	"hidden": false,
+	"id": "indicator_sophistication",
+	"isReadOnly": false,
+	"itemVersion": "3.1.28",
+	"locked": false,
+	"mergeStrategy": "",
+	"name": "Sophistication",
+	"neverSetAsRequired": false,
+	"openEnded": false,
+	"ownerOnly": false,
+	"packID": "CommonTypes",
+	"packPropagationLabels": [
+		"all"
+	],
+	"placeholder": "",
+	"propagationLabels": [
+		"all"
+	],
+	"required": false,
+	"runScriptAfterUpdate": false,
+	"script": "",
+	"selectValues": [
+		"none",
+		"minimal",
+		"intermediate",
+		"advanced",
+		"expert",
+		"innovator",
+		"strategic"
+	],
+	"sla": 0,
+	"system": false,
+	"systemAssociatedTypes": null,
+	"template": "",
+	"threshold": 72,
+	"toServerVersion": "",
+	"type": "multiSelect",
+	"unmapped": false,
+	"unsearchable": false,
+	"useAsKpi": false,
+	"validatedError": "",
+	"validationRegex": "",
+	"version": -1
+}
