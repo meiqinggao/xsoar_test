@@ -1,0 +1,39 @@
+{
+	"autorun": true,
+	"closureScript": "",
+	"color": "#ff7500",
+	"days": 0,
+	"daysR": 4,
+	"default": true,
+	"definitionId": "",
+	"detached": false,
+	"disabled": false,
+	"extractSettings": {
+		"fieldCliNameToExtractSettings": {},
+		"mode": "All"
+	},
+	"fromServerVersion": "5.0.0",
+	"hours": 0,
+	"hoursR": 0,
+	"id": "Case",
+	"itemVersion": "1.2.2",
+	"layout": "Case",
+	"locked": false,
+	"name": "Case",
+	"onChangeRepAlg": 1,
+	"packID": "CaseManagement-Generic",
+	"packPropagationLabels": [
+		"all"
+	],
+	"playbookId": "Case Management - Generic",
+	"preProcessingScript": "",
+	"propagationLabels": [],
+	"readonly": false,
+	"reputationCalc": 1,
+	"slaReminder": 96,
+	"system": true,
+	"toServerVersion": "",
+	"version": -1,
+	"weeks": 0,
+	"weeksR": 0
+}
