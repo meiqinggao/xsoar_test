@@ -1,0 +1,255 @@
+{
+	"contextPath": "URL(val.Data \u0026\u0026 val.Data === obj.Data)",
+	"contextValue": "Data",
+	"defaultMapping": {
+		"asn": {
+			"complex": {
+				"accessor": "ASN",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"asowner": {
+			"complex": {
+				"accessor": "ASOwner",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"associations": {
+			"complex": {
+				"accessor": "Associations",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"blocked": {
+			"complex": {
+				"accessor": "Blocked",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"category": {
+			"complex": {
+				"accessor": "Category",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"communitynotes": {
+			"complex": {
+				"accessor": "CommunityNotes",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"detectionengines": {
+			"complex": {
+				"accessor": "DetectionEngines",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"feedrelatedindicators": {
+			"complex": {
+				"accessor": "FeedRelatedIndicators",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"geocountry": {
+			"complex": {
+				"accessor": "Country",
+				"filters": [],
+				"root": "URL.Geo",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"internal": {
+			"complex": {
+				"accessor": "Internal",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"malwarefamily": {
+			"complex": {
+				"accessor": "MalwareFamily",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"positivedetections": {
+			"complex": {
+				"accessor": "PositiveDetections",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"publications": {
+			"complex": {
+				"accessor": "Publications",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"reportedby": {
+			"complex": {
+				"accessor": "ReportedBy",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"signed": {
+			"complex": {
+				"accessor": "Signed",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"tags": {
+			"complex": {
+				"accessor": "Tags",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"threattypes": {
+			"complex": {
+				"accessor": "ThreatTypes",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		},
+		"trafficlightprotocol": {
+			"complex": {
+				"accessor": "TrafficLightProtocol",
+				"filters": [],
+				"root": "URL",
+				"transformers": [
+					{
+						"operator": "uniq"
+					}
+				]
+			}
+		}
+	},
+	"definitionId": "",
+	"details": "URL",
+	"disabled": false,
+	"enhancementScriptNames": [
+		"URLReputation",
+		"SplunkPySearch"
+	],
+	"excludedBrands": [],
+	"expiration": 43200,
+	"file": false,
+	"fileHashesPriority": null,
+	"formatScript": "UnEscapeURLs",
+	"fromServerVersion": "5.5.0",
+	"id": "urlRep",
+	"itemVersion": "3.1.28",
+	"layout": "urlRep",
+	"legacyNames": null,
+	"locked": false,
+	"manualMapping": null,
+	"mergeContext": false,
+	"packID": "CommonTypes",
+	"packPropagationLabels": [
+		"all"
+	],
+	"propagationLabels": [],
+	"regex": "(?i)((?:(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])(?:\\[\\.\\]|\\.)){3}(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])/|(?:(?:https?|ftp|hxxps?):(\\/?\\/?\\\\?\\\\?)|www\\[?\\.\\]?|ftp\\[?\\.\\]?))(?:[-_\\d\\p{L}]+\\[?\\.\\]?)+[-_\\d\\p{L}]+(?::\\d+)?(?:(?:((\\/)|(\\*)|(\\#)|(\\?)))+(?:[-\\d\\p{L}+\u0026@'#\\/%=~_$!\\-:,.;\\\\*–—―|]*|\\([-\\d\\p{L}\\+\u0026@#\\/%=~_\\$\\?!\\-:,\\.;\\\\\\*–—―\\|]*\\))*)*",
+	"reputationCommand": "url",
+	"reputationScriptName": "",
+	"shouldShareComments": false,
+	"system": true,
+	"toServerVersion": "",
+	"updateAfter": 0,
+	"version": -1
+}
