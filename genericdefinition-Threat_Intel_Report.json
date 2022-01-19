@@ -1,0 +1,19 @@
+{
+	"auditable": false,
+	"definitionId": "",
+	"fromServerVersion": "",
+	"id": "ThreatIntelReport",
+	"itemVersion": "1.0.4",
+	"locked": false,
+	"name": "Threat Intel Report",
+	"packID": "ThreatIntelReports",
+	"packPropagationLabels": [
+		"all"
+	],
+	"partitioned": false,
+	"pluralName": "Threat Intel Reports",
+	"rbacSupport": true,
+	"system": true,
+	"toServerVersion": "",
+	"version": -1
+}
