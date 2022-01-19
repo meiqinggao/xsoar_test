@@ -1,0 +1,19 @@
+{
+	"color": "#F7B933",
+	"definitionId": "ThreatIntelReport",
+	"detached": false,
+	"disabled": false,
+	"fromServerVersion": "",
+	"id": "ThreatIntelReport_Campaign",
+	"itemVersion": "1.0.4",
+	"layout": "Campaign Report",
+	"locked": false,
+	"name": "Campaign",
+	"packID": "ThreatIntelReports",
+	"packPropagationLabels": [
+		"all"
+	],
+	"system": true,
+	"toServerVersion": "",
+	"version": -1
+}
